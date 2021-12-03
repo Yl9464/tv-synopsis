@@ -3,7 +3,7 @@ html
     body
      
       h1 Kim's Convenience 
-            h2 Developed By:
+            h3 Developed By:
             ul 
                 each developer in showdata.developedBy
                     li= developer
@@ -11,6 +11,8 @@ html
             ul 
                 each stars in showdata.starring
                     li= stars
-            h4 Seasons: 
-                for season in showdata.seasons
-                    li= season.number 
+            h3 Seasons:
+            ul 
+                 each seasonNum in showdata.seasons
+                    li= "Season:" + ' ' + seasonNum.number
+                     
