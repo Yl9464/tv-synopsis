@@ -1,7 +1,13 @@
-html 
+html
+    link(rel= "stylesheet" href="css/styles.css")    
     body
-        h1 Kim's Convenience 
-            h2 Developed By
+     
+      h1 Kim's Convenience 
+            h2 Developed By:
             ul 
-                li= showdata.developedBy[0]
-                 li= showdata.developedBy[1]
+                each developer in showdata.developedBy
+                    li= developer
+            h3 Starring:
+            ul 
+                each stars in showdata.starring
+                    li= stars
