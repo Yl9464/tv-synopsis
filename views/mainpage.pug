@@ -1,8 +1,7 @@
 html
     link(rel= "stylesheet" href="css/styles.css")    
     body
-     
-      h1 Kim's Convenience 
+    h1= showdata.title
             h3 Developed By:
             ul 
                 each developer in showdata.developedBy
@@ -11,8 +10,7 @@ html
             ul 
                 each stars in showdata.starring
                     li= stars
-            h3 Seasons:
+            h3 Season 
             ul 
-                 each seasonNum in showdata.seasons
-                    li= "Season:" + ' ' + seasonNum.number
-                     
+                for num in showdata.seasons
+                    a(href=`/season/${num.number}`)= num.number
