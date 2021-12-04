@@ -1,4 +1,3 @@
-const { request, response } = require('express')
 const express = require('express')
 const showdata = require('./showdata')
 const app = express()
@@ -11,8 +10,8 @@ app.get('/', (request, response) => {
   response.render('mainpage', { showdata })
 })
 
-app.get('/showdata/:num', (request, response) => {
-  const season = showdata.seasons.find((season) => season.num === parseInt(request.params.num))
+app.get('/season/:num', (request, response) => {
+  const season = showdata.seasons.find((season) => season.number === parseInt(request.params.num))
 
   return response.render('season', { season })
 })
