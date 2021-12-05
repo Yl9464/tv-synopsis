@@ -6,14 +6,14 @@ html
         table 
             tr 
                 th No.
-                th Title 
-                th Director 
+                th Title:
+                th Director: 
             each episode in season.episodes
                 tr 
                     td= episode.number 
                     td= episode.title 
                     td= episode.director 
-                tr 
+                tr   
                     td= episode.synopsis 
 
 
