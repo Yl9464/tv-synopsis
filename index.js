@@ -14,7 +14,7 @@ app.get('/', (request, response) => {
 app.get('/season/:num', (request, response) => {
   const season = showdata.seasons.find((season) => season.number === parseInt(request.params.num))
 
-  return response.render('season', { season })
+  return response.render('season', { season, title: showdata.title })
 })
 
 app.all('*', (request, response) => {
