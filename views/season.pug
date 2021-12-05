@@ -2,4 +2,7 @@ html
     include partials/head.pug
     body 
         h1 Kim's Convenience 
-             h3 Episode:
+             h3 Episode: 
+             ul 
+                each episode in season.episodes
+                    li= episode.number 

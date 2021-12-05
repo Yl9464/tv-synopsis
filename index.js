@@ -16,7 +16,6 @@ app.get('/season/:num', (request, response) => {
   return response.render('season', { season })
 })
 
-
 app.all('*', (request, response) => {
   return response.status(404).send('Sorry Bro...')
 })
