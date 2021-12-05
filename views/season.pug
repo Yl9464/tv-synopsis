@@ -5,4 +5,5 @@ html
              h3 Episode: 
              ul 
                 each episode in season.episodes
-                    li= episode.number + ':' + ' ' + episode.title  + ':' + ' ' + episode.director  
+                    li= `Number: ${episode.number} Title: ${episode.title}. Director: ${episode.director}.`  
+                    div=`${episode.synopsis}`
