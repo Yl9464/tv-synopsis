@@ -4,16 +4,17 @@ html
         h1= title 
         div= `Season: ${season.number}` 
         table 
-            tr 
+            tr.headers
                 th No.
                 th Title:
                 th Director: 
             each episode in season.episodes
-                tr 
-                    td= episode.number 
-                    td= episode.title 
-                    td= episode.director 
-                tr   
-                    td= episode.synopsis 
-
+                tr.info 
+                    td.epNum= episode.number 
+                    td.epTitle= episode.title 
+                    td.epDirect= episode.director 
+                tr.summary
+                    td.synopsis= episode.synopsis 
+                    td.testOne 
+                    td.testTwo
 
