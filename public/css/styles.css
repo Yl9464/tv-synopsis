@@ -55,9 +55,8 @@ tr.summary{
 background-color: rgb(97, 42, 107);
 color: rgb(221, 206, 189);
 border: 3px solid black;
-text-align: justify;
-margin-left: 20px;
 font-family: monospace;
-}
+white-space: normal;
 
+}
 
