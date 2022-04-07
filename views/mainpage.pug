@@ -1,0 +1,17 @@
+html
+    include partials/head.pug
+    body
+    h1= showdata.title
+        
+        h3 Developed By:
+        ul 
+            each developer in showdata.developedBy
+                li= developer
+        h3 Starring:
+        ul 
+            each stars in showdata.starring
+                li= stars
+        h3 Season:
+            for num in showdata.seasons
+                li
+                    a(href=`/season/${num.number}`)= num.number

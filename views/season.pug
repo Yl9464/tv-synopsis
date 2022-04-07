@@ -1,0 +1,19 @@
+html 
+    include partials/head.pug
+    body 
+        h1= title 
+        div= `Season: ${season.number}` 
+        table 
+            tr.headers
+                th No.
+                th Title:
+                th Director: 
+            each episode in season.episodes
+                tr.info 
+                    td.epNum= episode.number 
+                    td.epTitle= episode.title 
+                    td.epDirect= episode.director 
+                tr.summary
+                    td.synopsis= episode.synopsis 
+                    td.testOne 
+                    td.testTwo

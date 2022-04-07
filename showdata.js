@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 const showdata = {
-  title: 'Kim\'s Convenience',
+  title: 'Kims Convenience',
   developedBy: ['Ins Choi', 'Kevin White'],
   starring: ['Paul Sun-Hyung Lee', 'Jean Yoon', 'Andrea Bang', 'Simu Liu', 'Andrew Phung', 'Nicole Power'],
   seasons: [{
